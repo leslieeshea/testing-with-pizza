@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
+  title: string = 'I love pizza!';
 
   constructor() { }
 
