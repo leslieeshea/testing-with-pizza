@@ -22,4 +22,10 @@ describe('PizzaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have a title 'I love pizza!'`, () => {
+    fixture = TestBed.createComponent(PizzaComponent); // creates a pizza component instance to test
+    component = fixture.debugElement.componentInstance;
+    expect(component.title).toEqual('I love pizza!');
+  });
 });
